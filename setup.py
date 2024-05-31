@@ -3,16 +3,6 @@ import sys
 
 from setuptools import setup
 
-try:
-    from xpybutil.compat import xproto, xinerama, randr
-except:
-    print('')
-    print('xpybutil requires the X Python Binding')
-    print('See: http://cgit.freedesktop.org/xcb/xpyb/')
-    print('More options: xpyb-ng:', 'https://github.com/dequis/xpyb-ng',
-          'and xcffib:', 'https://github.com/tych0/xcffib')
-    sys.exit(1)
-
 setup(
     name="xpybutil",
     maintainer="Fenner Macrae",
